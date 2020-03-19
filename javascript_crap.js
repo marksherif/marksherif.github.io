@@ -1,4 +1,4 @@
-var makeItRain = function() {
+function makeItRain() {
     //clear out everything
     $('.rain').empty();
 
@@ -23,23 +23,25 @@ var makeItRain = function() {
     $('.rain.back-row').append(backDrops);
 }
 
-$('.splat-toggle.toggle').on('click', function() {
-    $('body').toggleClass('splat-toggle');
-    $('.splat-toggle.toggle').toggleClass('active');
-    makeItRain();
-});
+window.onload = function() {
+    this.makeItRain()
+};
 
-$('.back-row-toggle.toggle').on('click', function() {
-    $('body').toggleClass('back-row-toggle');
-    $('.back-row-toggle.toggle').toggleClass('active');
-    makeItRain();
-});
+// $('.splat-toggle.toggle').on('click', function() {
+//     $('body').toggleClass('splat-toggle');
+//     $('.splat-toggle.toggle').toggleClass('active');
+//     makeItRain();
+// });
 
-$('.single-toggle.toggle').on('click', function() {
-    console.log("FUCKING CLICKED")
-    $('body').toggleClass('single-toggle');
-    $('.single-toggle.toggle').toggleClass('active');
-    makeItRain();
-});
+// $('.back-row-toggle.toggle').on('click', function() {
+//     $('body').toggleClass('back-row-toggle');
+//     $('.back-row-toggle.toggle').toggleClass('active');
+//     makeItRain();
+// });
 
-makeItRain();
+// $('.single-toggle.toggle').on('click', function() {
+//     console.log("FUCKING CLICKED")
+//     $('body').toggleClass('single-toggle');
+//     $('.single-toggle.toggle').toggleClass('active');
+//     makeItRain();
+// });
