@@ -34,7 +34,7 @@ body.back-row-toggle .rain.back-row {
     width: 15px;
     height: 180px;
     pointer-events: none;
-    animation: drop 0.5s linear infinite;
+    animation: drop 0.8s linear infinite;
 }
 
 @keyframes drop {
