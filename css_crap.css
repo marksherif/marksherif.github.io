@@ -5,7 +5,8 @@ html {
 body {
     height: 100%;
     margin: 0;
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
     background: linear-gradient(to bottom, #202020, #111119);
 }
 
@@ -108,6 +109,8 @@ body.splat-toggle .splat {
 
 img {
     border-radius: 50%;
+    width: 140px;
+    height: 140px;
 }
 
 .centered {
@@ -141,7 +144,10 @@ p {
 h1 {
     font-family: Sofia Pro, Arial, Helvetica, sans-serif;
     color: white;
-    line-height: 100px;
+    line-height: 140px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
 }
 
 h3 {
