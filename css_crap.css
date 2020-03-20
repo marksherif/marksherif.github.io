@@ -120,10 +120,12 @@ img {
     left: 0;
     margin: auto;
     z-index: 5;
+    overflow: scroll;
 }
 
 .content {
     width: 100%;
+    overflow: scroll;
 }
 
 .disp {
@@ -135,16 +137,19 @@ p {
     font-family: Sofia Pro, Arial, Helvetica, sans-serif;
     color: white;
     line-height: 2;
+    overflow: scroll;
 }
 
 h1 {
     font-family: Sofia Pro, Arial, Helvetica, sans-serif;
     color: white;
     line-height: 100px;
+    overflow: scroll;
 }
 
 h3 {
     font-family: Sofia Pro, Arial, Helvetica, sans-serif;
     color: white;
     line-height: 100px;
+    overflow: scroll;
 }
