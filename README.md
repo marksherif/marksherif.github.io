@@ -1,11 +1,13 @@
 The whats up, i'm Mark website
 ======
 
+Head on over to https://marksherif.github.io/ to checkout my unparalleled frontend skills.
+
 # 1. Remarks
 
 Still under construction, but the important stuff is there :muscle:
 
-I'm a terrible frontend developer so bare with me here, i'm still building this stuff and quite frankly divs and doodads aren't really my thing :)
+TERRIBLE with the frontend stuff so bare with me here, divs and doodads aren't really my thing :)
 
 # 2. Acknowledgments
 
