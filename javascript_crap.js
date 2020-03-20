@@ -4,7 +4,6 @@ function makeItRain() {
 
     var increment = 0;
     var drops = "";
-    var backDrops = "";
 
     while (increment < 100) {
         //couple random numbers to use for various randomizations
@@ -16,11 +15,9 @@ function makeItRain() {
         increment += randoFiver;
         //add in a new raindrop with various randomizations to certain CSS properties
         drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 1.0' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 1.0' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 1.0' + randoHundo + 's;"></div></div>';
-        // backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (randoFiver + randoFiver - 1 + 100) + '%; animation-delay: 0.' + randoHundo + 's; animation-duration: 1.0' + randoHundo + 's;"><div class="stem" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 1.0' + randoHundo + 's;"></div><div class="splat" style="animation-delay: 0.' + randoHundo + 's; animation-duration: 1.0' + randoHundo + 's;"></div></div>';
     }
 
     $('.rain.front-row').append(drops);
-    // $('.rain.back-row').append(backDrops);
 }
 
 window.onload = function() {
@@ -28,22 +25,3 @@ window.onload = function() {
     $('.splat-toggle.toggle').toggleClass('active');
     this.makeItRain()
 };
-
-// $('.splat-toggle.toggle').on('click', function() {
-//     $('body').toggleClass('splat-toggle');
-//     $('.splat-toggle.toggle').toggleClass('active');
-//     makeItRain();
-// });
-
-// $('.back-row-toggle.toggle').on('click', function() {
-//     $('body').toggleClass('back-row-toggle');
-//     $('.back-row-toggle.toggle').toggleClass('active');
-//     makeItRain();
-// });
-
-// $('.single-toggle.toggle').on('click', function() {
-//     console.log("FUCKING CLICKED")
-//     $('body').toggleClass('single-toggle');
-//     $('.single-toggle.toggle').toggleClass('active');
-//     makeItRain();
-// });
